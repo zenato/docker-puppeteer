@@ -2,6 +2,9 @@ FROM node:8
 
 LABEL maintainer="yeongjinnn@gmail.com"
 
+# See https://crbug.com/795759
+RUN apt-get update && apt-get install -yq libgconf-2-4
+
 # Install latest chrome package.
 # Note: this installs the necessary libs to make the bundled version of Chromium that Pupppeteer
 # installs, work.
