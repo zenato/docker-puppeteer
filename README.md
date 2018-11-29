@@ -7,7 +7,7 @@ Run the container by passing node -e "<yourscript.js content as a string> as the
 
 ```bash
 docker run -i --rm --cap-add=SYS_ADMIN \
-    --name puppeteer-chrome puppeteer-chrome-linux \
+    --name puppeteer-chrome zenato/puppeteer \
     node -e "`cat yourscript.js`"
 ```
 
