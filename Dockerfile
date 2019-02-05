@@ -1,9 +1,11 @@
-FROM node:8
+FROM node:10
 
 LABEL maintainer="yeongjinnn@gmail.com"
 
 # See https://crbug.com/795759
 RUN apt-get update && apt-get install -yq libgconf-2-4
+
+ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
 
 # Install latest chrome package.
 # Note: this installs the necessary libs to make the bundled version of Chromium that Pupppeteer
