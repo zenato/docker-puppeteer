@@ -1,4 +1,10 @@
-Base environment image for Puppeteer (Headless Chrome Node API)
+<p align="center">
+    <h1 align="center">docker-puppeteer</h1>
+</p>
+
+Base environment docker image for Puppeteer (Headless Chrome Node API)  
+**This project has been deprecated. Please use [`puppeteer` official image](https://pptr.dev/guides/docker/).**
+
 
 ## Getting started
 
